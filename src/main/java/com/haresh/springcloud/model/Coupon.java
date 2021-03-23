@@ -16,7 +16,7 @@ public class Coupon {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	private String couponCode;
+	private String code;
 	private BigDecimal discount;
 	private String expDate;
 
@@ -37,15 +37,15 @@ public class Coupon {
 	/**
 	 * @return the couponCode
 	 */
-	public String getCouponCode() {
-		return couponCode;
+	public String getCode() {
+		return code;
 	}
 
 	/**
 	 * @param couponCode the couponCode to set
 	 */
-	public void setCouponCode(String couponCode) {
-		this.couponCode = couponCode;
+	public void setCode(String code) {
+		this.code = code;
 	}
 
 	/**
